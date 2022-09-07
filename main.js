@@ -8,6 +8,15 @@ function strLength(string) {
     strings.forEach(string => {
         count++;
     })
-    console.log(count);
+    return count;
 }
 strLength("babmoty");
+
+/**
+ * @param  {function that reverse string} string
+ */
+function strReverse(string) {
+    let reversed = "";
+    for (let i = string.length-1; i >= 0; i--) reversed +=string[i]; return reversed;
+}
+strReverse("google");
