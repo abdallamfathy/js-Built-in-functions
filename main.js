@@ -20,3 +20,15 @@ function strReverse(string) {
     for (let i = string.length-1; i >= 0; i--) reversed +=string[i]; return reversed;
 }
 strReverse("google");
+
+/**
+ * @param  {function that change string to array} string
+ */
+function strToArray(string) {
+    let array = [];
+    for (let i = 0; i < string.length; i++) {
+        array +=string[i]
+    }
+    console.log(array);
+}
+strToArray("bambot");
